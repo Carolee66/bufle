@@ -1,0 +1,95 @@
+/* Style général de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Fond flouté */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/facture.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(0px);
+    z-index: 1;
+}
+
+/* Conteneur du formulaire */
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 2);
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 350px auto;
+    text-align: center;
+}
+
+/* Style pour le logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 300px; /* Ajustez la taille du logo selon vos préférences */
+    height: auto;
+}
+
+/* Titre du formulaire */
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Style des labels du formulaire */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Style des champs du formulaire */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+}
+
+/* Style du bouton de soumission */
+input[type="submit"] {
+    width: 50%;
+    background-color: #3767ea; /* Changement de couleur du bouton */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2055e8; /* Légère variation au survol */
+}
+
+/* Style pour l'image du document */
+.document-image {
+    width: 100%; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-top: 20px; /* Espacement au-dessus de l'image */
+}
